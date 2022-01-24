@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background:rgb(214, 28, 28);
+}
+
+/* === SVG === */
+svg {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+svg #ornament,
+svg #handle {
+  fill: #fff;
+}
+
+svg #paths_for_happynew,
+svg #paths_for_coding {
+  fill:none;
+  stroke-width: 9px;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+}
+
+svg #logo {
+  opacity:0;
+  fill:rgb(0, 0, 0);
+}
+
+svg .parcel {
+  fill:rgb(255, 255, 255);
+}

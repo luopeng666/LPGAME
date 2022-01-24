@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #87CEFA;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+.myimg {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*标题栏 */
+#fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#back {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    top: 0;
+    width: 100px;
+    height: 50px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    background-color: #87CEFA;
+    height: 50px;
+}
+
+#banner div:nth-child(1) {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    width: 50%;
+    color: gainsboro;
+}
+
+#banner div:nth-child(2) {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: beige;
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+/* navbar */
+#nav {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: none;
+    flex-direction: column;
+    height: 200px;
+    z-index: 1000;
+}
+
+#nav li {
+    display: block;
+    height: 20%;
+    background-color: gainsboro;
+    color: white;
+    list-style: none;
+    padding: 9px 0px;
+    text-align: center;
+}
+
+#nav li:active {
+    background-color: #87CEFA;
+}
+
+/* 内容*/
+#show {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px auto;
+}
+
+#gameimg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 375px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.under {
+    border-top: 400px solid rgb(0, 255, 13);
+    border-right: 400px solid rgb(45, 218, 203);
+    border-bottom: 400px solid rgb(255, 106, 156);
+    border-left: 400px solid rgb(251, 255, 26);
+    animation: rotate 2s linear infinite;
+}
+
+.box>span {
+    position: absolute;
+    margin: 8px;
+    width: 80%;
+    height: 420px;
+    border-radius: 5%;
+    background-size: cover;
+    background-color: white;
+}
+
+#info {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #f1c121;
+    margin-bottom: 20px;
+}
+
+.small_title {
+    color: #243a3a;
+    width: 100px;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#title {
+    color: #243a3a;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#jianjie {
+    color: #1da3a3;
+    width: 100%-20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 5px 10px 0px;
+}
+
+
+#type {
+    display: block;
+    color: #1da3a3;
+    width: 100%-20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#old_price {
+    display: inline;
+    text-decoration: line-through;
+    padding-left: 20px;
+    font-size: 25px;
+    color: rgba(27, 63, 57, 0.459);
+}
+
+#price {
+    display: inline;
+}
+
+#price_frame {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#button_frame {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#button1 {
+    position: absolute;
+    left: 56px;
+}
+
+/* bottom */
+.div_12 {
+    margin: 0;
+    margin-top: 100px;
+    width: 100%;
+    background-color: #87CEFA;
+    background-color: #1b1b1b;
+}
+
+.div_15 {
+    width: 100%;
+    height: 184px;
+    font-size: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100%;
+    line-height: 20px;
+    padding: 0;
+}
+
+.div_15 p {
+    display: block;
+    width: 100%;
+    /* text-align: center; */
+    color: #CCCCCC;
+}
+
+.div_12 ul {
+
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 65px;
+}
+
+.div_12 ul li {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    display: inline;
+}
+
+.div_12 ul li a {
+    width: 100%;
+    transition-duration: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    color: #E7E7E7;
+}
